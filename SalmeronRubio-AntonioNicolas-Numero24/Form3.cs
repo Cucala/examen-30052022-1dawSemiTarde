@@ -30,7 +30,9 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
 
         public int save()
         {
+            int point = 0;
 
+            return point;
         }
 
         public void cancel()

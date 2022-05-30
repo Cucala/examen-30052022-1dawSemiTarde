@@ -28,7 +28,8 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
 
         private void btnNuevasPreguntas_Click(object sender, EventArgs e)
         {
-
+            Form2 form = new Form2();
+            form.Show();
         }
 
         private void btnJugar_Click(object sender, EventArgs e)

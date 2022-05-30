@@ -30,7 +30,14 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
 
         public QuestionModel save()
         {
-
+            string pregunta = textBoxPregunta.Text;
+            string[] respuestas = new string[3];
+            respuestas[0] = textBoxRespuestaA.Text;
+            respuestas[1] = textBoxRespuestaB.Text;
+            respuestas[2] = textBoxRespuestaC.Text;
+            int valor = Convert.ToInt32(textBoxValorPregunta.Text);
+            QuestionModel newQuestion = new QuestionModel(pregunta, respuestas, valor);
+            return newQuestion;
         }
 
         public void cancel()

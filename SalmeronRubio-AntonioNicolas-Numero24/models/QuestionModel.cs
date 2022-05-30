@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SalmeronRubio_AntonioNicolas_Numero24.models
 {
-    internal class QuestionModel
+    public class QuestionModel
     {
         private string question;
         private string[] answers;

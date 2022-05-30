@@ -13,9 +13,20 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
 {
     public partial class Form3 : Form
     {
-        public Form3()
+        private QuestionModel model;
+        public Form3(QuestionModel model)
         {
             InitializeComponent();
+            this.model = model;
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            lblPregunta.Text = model.Question.ToString();
+            string[] resps = model.Answers.ToArray();
+            comboBoxRespuestas.Items.Add(resps[0]);
+            comboBoxRespuestas.Items.Add(resps[1]);
+            comboBoxRespuestas.Items.Add(resps[2]);
         }
 
         private void btnNiIdea_Click(object sender, EventArgs e)

@@ -24,6 +24,7 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
         public Form1()
         {
             InitializeComponent();
+            Questions = new List<QuestionModel>();
         }
 
         private void btnNuevasPreguntas_Click(object sender, EventArgs e)
@@ -48,7 +49,7 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
 
         public void play(QuestionModel model)
         {
-            Form3 form = new Form3();
+            Form3 form = new Form3(model);
         }
 
         public void addQuestion()

@@ -13,19 +13,21 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private List<QuestionModel> model;
+        public Form2(List<QuestionModel> model)
         {
             InitializeComponent();
+            this.model = model;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-
+            model.Add(save());
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            cancel();
         }
 
         public QuestionModel save()
@@ -42,7 +44,7 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
 
         public void cancel()
         {
-
+            this.Close();
         }
     }
 }

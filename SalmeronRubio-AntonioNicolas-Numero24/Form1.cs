@@ -17,7 +17,7 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
         private string player;
         private int points;
 
-        internal List<QuestionModel> Questions { get => questions; set => questions = value; }
+        public List<QuestionModel> Questions { get => questions; set => questions = value; }
         public string Player { get => player; set => player = value; }
         public int Points { get => points; set => points = value; }
 
@@ -28,13 +28,13 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
 
         private void btnNuevasPreguntas_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
-            form.Show();
+            var newForm2 = new Form2(Questions);
+            newForm2.Show();
         }
 
         private void btnJugar_Click(object sender, EventArgs e)
         {
-
+            Form3 form = new Form3();
         }
 
         public void play(QuestionModel model)

@@ -27,5 +27,15 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
         {
 
         }
+
+        public int save()
+        {
+
+        }
+
+        public void cancel()
+        {
+
+        }
     }
 }

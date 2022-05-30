@@ -69,6 +69,7 @@
             this.btnNoSe.TabIndex = 3;
             this.btnNoSe.Text = "Ni Idea";
             this.btnNoSe.UseVisualStyleBackColor = true;
+            this.btnNoSe.Click += new System.EventHandler(this.btnNoSe_Click);
             // 
             // btnConfirmar
             // 
@@ -78,6 +79,7 @@
             this.btnConfirmar.TabIndex = 4;
             this.btnConfirmar.Text = "Estoy seguro";
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // Jugar
             // 

@@ -37,8 +37,9 @@ namespace ArturoHerrera24
         private void btnAñadir_Click(object sender, EventArgs e)
         {
             Form2 form = new Form2();
-            this.Hide();
-            form.Show();
+
+                this.Hide();
+                form.Show();
         }
 
         private void btnJugar_Click(object sender, EventArgs e)

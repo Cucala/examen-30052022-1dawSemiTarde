@@ -37,7 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblValor = new System.Windows.Forms.Label();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -65,7 +65,7 @@
             // 
             this.txtPregunta.Location = new System.Drawing.Point(180, 74);
             this.txtPregunta.Name = "txtPregunta";
-            this.txtPregunta.Size = new System.Drawing.Size(125, 27);
+            this.txtPregunta.Size = new System.Drawing.Size(307, 27);
             this.txtPregunta.TabIndex = 2;
             // 
             // txtRespuestaA
@@ -116,14 +116,14 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "C";
             // 
-            // label6
+            // lblValor
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 369);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 20);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Valor";
+            this.lblValor.AutoSize = true;
+            this.lblValor.Location = new System.Drawing.Point(27, 369);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(43, 20);
+            this.lblValor.TabIndex = 9;
+            this.lblValor.Text = "Valor";
             // 
             // txtValor
             // 
@@ -160,7 +160,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtValor);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblValor);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -188,7 +188,7 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private Label label6;
+        private Label lblValor;
         private TextBox txtValor;
         private Button btnGuardar;
         private Button btnCancelar;

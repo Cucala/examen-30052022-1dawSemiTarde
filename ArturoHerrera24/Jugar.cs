@@ -17,8 +17,21 @@ namespace ArturoHerrera24
         public Jugar()
         {
             InitializeComponent();
-          
+            
         }
-        
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            if(comboPreguntas.Text == form.Respuestas[0])
+            {
+                form.Points = form.Points + 5;
+            }
+        }
+
+        private void btnNoSe_Click(object sender, EventArgs e)
+        {
+            form.Points = form.Points - 2;
+            this.Close();
+        }
     }
 }

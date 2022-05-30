@@ -26,10 +26,15 @@ namespace ArturoHerrera24
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            form.Preguntas.Add(txtPregunta.Text);
-            form.Respuestas.Add(txtRespuestaA.Text);
-            form.Respuestas.Add(txtRespuestaB.Text);
-            form.Respuestas.Add(txtRespuestaC.Text);
+                form.Preguntas.Add(txtPregunta.Text);
+                form.Respuestas.Add(txtRespuestaA.Text);
+                form.Respuestas.Add(txtRespuestaB.Text);
+                form.Respuestas.Add(txtRespuestaC.Text);
+            
+            form.Show();
+            this.Hide();
+            
+
         }
     }
 }

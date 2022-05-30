@@ -28,23 +28,33 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
 
         private void btnNuevasPreguntas_Click(object sender, EventArgs e)
         {
-            var newForm2 = new Form2(Questions);
-            newForm2.Show();
+            addQuestion();
         }
 
         private void btnJugar_Click(object sender, EventArgs e)
         {
-            Form3 form = new Form3();
+            if (Questions.Count == 0)
+            {
+                addQuestion();
+            }
+            else
+            {
+                Random random = new Random();
+                int num = random.Next(Questions.Count -1);
+                QuestionModel model = Questions[num];
+                play(model);
+            }
         }
 
         public void play(QuestionModel model)
         {
-
+            Form3 form = new Form3();
         }
 
         public void addQuestion()
         {
-
+            var newForm2 = new Form2(Questions);
+            newForm2.Show();
         }
     }
 }

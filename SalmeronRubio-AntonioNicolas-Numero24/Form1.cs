@@ -49,7 +49,8 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
 
         public void play(QuestionModel model)
         {
-            Form3 form = new Form3(model);
+            var newForm3 = new Form3(model, Points);
+            newForm3.Show();
         }
 
         public void addQuestion()

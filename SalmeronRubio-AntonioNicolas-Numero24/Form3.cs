@@ -14,10 +14,12 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
     public partial class Form3 : Form
     {
         private QuestionModel model;
-        public Form3(QuestionModel model)
+        private int points;
+        public Form3(QuestionModel model, int points)
         {
             InitializeComponent();
             this.model = model;
+            this.points = points;
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -31,24 +33,24 @@ namespace SalmeronRubio_AntonioNicolas_Numero24
 
         private void btnNiIdea_Click(object sender, EventArgs e)
         {
-
+            cancel();
+            this.Close();
         }
 
         private void btnSeguro_Click(object sender, EventArgs e)
         {
-
+            model.Value += save();
         }
 
         public int save()
         {
-            int point = 0;
-
+            int point = model.Value;
             return point;
         }
 
         public void cancel()
         {
-
+            points -= 2;
         }
     }
 }
